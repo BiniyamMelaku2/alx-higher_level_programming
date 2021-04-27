@@ -8,9 +8,9 @@ else:
 if ldigit > 5:
     print("Last digit of {} is {} and is greater than 5"
            .format(number, ldigit))
-elif ldigit is 0:
+if ldigit is 0:
     print("Last digit of {} is {} and is 0"
           .format(number, ldigit))
-else:
+if ldigit < 6:
     print("Last digit of {} is {} and is less than 6 and not 0"
           .format(number, ldigit))

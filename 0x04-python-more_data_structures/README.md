@@ -1,5 +1,5 @@
 # 0x04. Python - More Data Structures: Set, Dictionary
- Foundations - Low-level programming & Algorithm ― Hatching out
+ Foundations - High-level programming & Algorithm ― Hatching out
 
 ## 0-square_matrix_simple.py   | 0. Squared simple |
   Write a function that computes the square value of all integers of a matrix.

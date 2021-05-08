@@ -1,118 +1,179 @@
-# 0x00. Python - Hello, World
+# 0x01. Python - if/else, loops, functions
  Foundations - Higher-level programming ― Python
 
-## 0-run   | 0. Run Python file |
-  Write a Shell script that runs a Python script.
-  * The Python file name will be saved in the environment variable $PYFILE
-  > export PYFILE=main.py | ./0-run
+## 0-positive_or_negative.py   | 0. Positive anything is better than negative nothing |
+  This program will assign a random signed number to the variable number each time it is executed. Complete the source code in order to print whether the number stored in the variable number is positive or negative.
+  * You can find the source code "https://alx-intranet.hbtn.io/rltoken/rkvoXPA-lS3TAaemM9sChg"
+  * The variable number will store a different value every time you will run this program
+  * You don’t have to understand what import, random. randint do. Please do not touch this code
+  * The output of the program should be: The number, followed by if the number is greater than 0: is positive if the number is 0: is zero if the number is less than 0: is negative followed by a new line
+  >  ./0-positive_or_negative.py
      
-## 1-run_inline  | 1. Run inline |
-  Write a Shell script that runs Python code.
-  * The Python code will be saved in the environment variable $PYCODE
-  > export PYCODE='print("Holberton School: {}".format(88+10))' | ./1-run_inline
+## 1-last_digit.py  | 1. The last digit |
+  This program will assign a random signed number to the variable number each time it is executed. Complete the source code in order to print the last digit of the number stored in the variable number.
+  * You can find the source code "https://alx-intranet.hbtn.io/rltoken/hU682hcMxVchqWAcmh32tA"
+  * The variable number will store a different value every time you will run this program
+  * You don’t have to understand what import, random.randint do. Please do not touch this code. This line should not change: number = random.randint(-10000, 10000)
+  * The output of the program should be: The string Last digit of, followed by the number, followed by the string is, followed by the last digit of number, followed by if the last digit is greater than 5: the string and is greater than 5 if the last digit is 0: the string and is 0 if the last digit is less than 6 and not 0: the string and is less than 6 and not 0 followed by a new line
+  > ./1-last_digit.py
   
-## 2-print.py   | 2. Hello, print |
-  Write a Python script that prints exactly "Programming is like building a multilingual puzzle, followed by a new line.
-  * Use the function print
-  > ./2-print.py 
+## 2-print_alphabet.py  | 2. I sometimes suffer from insomnia. And when I can't fall asleep, I play what I call the alphabet game |
+  Write a program that prints the ASCII alphabet, in lowercase, not followed by a new line.
+  * You can only use one print function with string format
+  * You can only use one loop in your code
+  * You are not allowed to store characters in a variable
+  * You are not allowed to import any module
+  > ./2-print_alphabet.py
   
-## 3-print_number.py  | 3. Print integer |
-  Complete this source code in order to print the integer stored in the variable number, followed by Battery street, followed by a new line.
-  * You can find the source code <"https://github.com/holbertonschool/0x00.py/blob/master/3-print_number.py">
-  * The output of the script should be: the number, followed by Battery street, followed by a new line
-  * You are not allowed to cast the variable number into a string
-  * Your code must be 3 lines long
-  * You have to use the new print numbers tips (with .format(...))
-  "C is strongly typed… not in Python! The variable number can be assigned to a string, a float, a bool etc… Forcing the type during a string format ("...".format(...)) is a way to control the type of a variable"
-  > ../3-print_number.py
+## 3-print_alphabt.py  | 3. When I was having that alphabet soup, I never thought that it would pay off |
+  Write a program that prints the ASCII alphabet, in lowercase, not followed by a new line.
+  * Print all the letters except q and e
+  * You can only use one print function with string format
+  * You can only use one loop in your code
+  * You are not allowed to store characters in a variable
+  * You are not allowed to import any module
+  > ./3-print_alphabt.py
   
-## 4-print_float.py   | 4. Print float |
-  Complete the source code in order to print the float stored in the variable number with a precision of 2 digits.
-  * You can find the source code <"https://github.com/holbertonschool/0x00.py/blob/master/4-print_float.py">
-  * The output of the program should be:Float:, followed by the float with only 2 digits, followed by a new line
-  * You are not allowed to cast number to string
-  * You have to use the new print formatting tips (with .format(...))
-  > curl -Lso "hidden_4.pyc" "https://github.com/holbertonschool/0x02.py/raw/master/hidden_4.pyc"
-  > ./4-print_float.py
+## 4-print_hexa.py  | 4. Hexadecimal printing |
+  Write a program that prints all numbers from 0 to 98 in decimal and in hexadecimal (as in the following example)
+  * You can only use one print function with string format
+  * You can only use one loop in your code
+  * You are not allowed to store numbers or strings in a variable
+  * You are not allowed to import any module
+  > ./4-print_hexa.py
  
-## 5-print_string.py  | 5. Print string |
-  Complete this source code in order to print 3 times a string stored in the variable str, followed by its first 9 characters.
-  * You can find the source code <"https://github.com/holbertonschool/0x00.py/blob/master/5-print_string.py">
-  * The output of the program should be: 3 times the value of str, followed by a new line, followed by the 9 first characters of str, followed by a new line
-  * You are not allowed to use any loops or conditional statement
-  * Your program should be maximum 5 lines long
-  > ./5-print_string.py
+## 5-print_comb2.py  | 5. 00...99 |
+  Write a program that prints numbers from 0 to 99.
+  * Numbers must be separated by ,, followed by a space
+  * Numbers should be printed in ascending order, with two digits
+  * The last number should be followed by a new line
+  * You can only use no more than 2 print functions with string format
+  * You can only use one loop in your code
+  * You are not allowed to store numbers or strings in a variable
+  * You are not allowed to import any module
+  > ./5-print_comb2.py
 
-## 6-concat.py  | 6. Play with strings |
-  Complete this source code to print Welcome to Holberton School!
-  * You can find the source code <"https://github.com/holbertonschool/0x00.py/blob/master/6-concat.py">
-  * You are not allowed to use any loops or conditional statements.
-  * You have to use the variables str1 and str2 in your new line of code
-  * Your program should be exactly 5 lines long
-  > ./6-concat.py | wc -l 6-concat.py
+## 6-print_comb3.py | 6. Inventing is a combination of brains and materials. The more brains you use, the less material you need |
+  Write a program that prints all possible different combinations of two digits.
+  * Numbers must be separated by ,, followed by a space
+  * The two digits must be different 01 and 10 are considered the same combination of the two digits 0 and 1
+  * Print only the smallest combination of two digits
+  * Numbers should be printed in ascending order, with two digits
+  * The last number should be followed by a new line
+  * You can only use no more than 3 print functions with string format
+  * You can only use no more than 2 loops in your code
+  * You are not allowed to store numbers or strings in a variable
+  * You are not allowed to import any module
+  > ./6-print_comb3.py
 
 
-## 7-edges.py   | 7. Copy - Cut - Paste |
-  Complete this source code
-  * You can find the source code <"https://github.com/holbertonschool/0x00.py/blob/master/7-edges.py">
-  * You are not allowed to use any loops or conditional statements
-  * Your program should be exactly 8 lines long
-  * word_first_3 should contain the first 3 letters of the variable word
-  * word_last_2 should contain the last 2 letters of the variable word
-  * middle_word should contain the value of the variable word without the first and last letters
-  > ./7-edges.py | wc -l 7-edges.py
+## 7-islower.py  | 7. islower |
+  Write a function that checks for lowercase character.
+  * Prototype: [ def islower(c): ]
+  * Returns True if c is lowercase
+  * Returns False otherwise
+  * You are not allowed to import any module
+  * You are not allowed to use str.upper() and str.isupper()
+  * Tips: ord()
+  * You don’t need to understand __import__
+  > ./7-main.py
 
-## 8-concat_edges.py   | 8. Create a new sentence |
-  Complete this source code to print object-oriented programming with Python, followed by a new line.
-  * You can find the source code <"https://github.com/holbertonschool/0x00.py/blob/master/8-concat_edges.py">
-  * You are not allowed to use any loops or conditional statements
-  * Your program should be exactly 5 lines long
-  * You are not allowed to create new variables
-  * You are not allowed to use string literals
-  > /8-concat_edges.py | wc -l 8-concat_edges.py
-## 9-easter_egg.py   | 9. Easter Egg |
-  Write a Python script that prints “The Zen of Python”, by TimPeters, followed by a new line.
-  * Your script should be maximum 98 characters long (please check with wc -m 9-easter_egg.py)
-  > ./9-easter_egg.py
+## 8-uppercase.py   | 8. To uppercase |
+  Write a function that prints a string in uppercase followed by a new line.
+  * Prototype: [ def uppercase(str): ]
+  * You can only use no more than 2 print functions with string format
+  * You can only use one loop in your code
+  * You are not allowed to import any module
+  * You are not allowed to use str.upper() and str.isupper()
+  * Tips: ord()
+  > ./8-main.py
+  
+## 9-print_last_digit.py   | 9. There are only 3 colors, 10 digits, and 7 notes; it's what we do with them that's important |
+  Write a function that prints the last digit of a number.
+  * Prototype: [ def print_last_digit(number): ]
+  * Returns the value of the last digit
+  * You are not allowed to import any module
+You don’t need to understand __import__
+  > ./9-main.py
   
   
-## 10-check_cycle.c, lists.h  | 10. Linked list cycle |
-### Technical interview preparation:
+## 10-add.py  | 10. a + b |
+  Write a function that adds two integers and returns the result.
+  * Prototype: [ def add(a, b): ]
+  * Returns the value of a + b
+  * You are not allowed to import any module
+You don’t need to understand __import__
+  > ./10-main.py
+
+## 11-pow.py  | 11. a ^ b |
+  Write a function that computes a to the power of b and return the value.
+  * Prototype: [ def pow(a, b): ]
+  * Returns the value of a ^ b
+  * You are not allowed to import any module
+You don’t need to understand __import__
+  > ./11-main.py
+  
+## 12-fizzbuzz.py   | 12. Fizz Buzz |
+  Write a function that prints the numbers from 1 to 100 separated by a space.
+  * For multiples of three print Fizz instead of the number and for multiples of five print Buzz.
+  * For numbers which are multiples of both three and five print FizzBuzz.
+  * Prototype: [ def fizzbuzz(): ]
+  * Each element should be followed by a space
+  * You are not allowed to import any module
+You don’t need to understand __import__
+  > ./12-main.py | cat -e
+
+## 13-insert_number.c, lists.h  | 13. Insert in sorted linked list |
+###  Technical interview preparation:
   * You are not allowed to google anything
   * Whiteboard first
-  * This task and all future technical interview prep tasks will include checks for the efficiency of your solution, i.e. is your solution’s runtime fast enough, does your solution require extra memory usage / mallocs, etc.
-  * Write a function in C that checks if a singly linked list has a cycle in it.
-  * Prototype: [ int check_cycle(listint_t *list); ]
-  * Return: 0 if there is no cycle, 1 if there is a cycle
-  * Requirements: Only these functions are allowed: write, printf, putchar, puts, malloc, free
-  > gcc -Wall -Werror -Wextra -pedantic 10-main.c 10-check_cycle.c 10-linked_lists.c -o cycle | ./cycle 
-  "Solving a problem is already a big win! but finding the best and optimal way to solve it, it’s way better! Think about the most optimal / fastest way to do it."
-
-## 100-write.py   | 11. Hello, write |
-  Write a Python script that prints exactly and that piece of art is useful - Dora Korpar, 2015-10-19, followed by a new line.
-  * Use the function write from the sys module
-  * You are not allowed to use print
-  * Your script should print to stderr
-  * Your script should exit with the status code 1
-  * (Dora Korpar was a Holberton student in Cohort 0 of San Francisco)
-  > ./100-write.py | /100-write.py 2> q | cat q
+  * Write a function in C that inserts a number into a sorted singly linked list.
+  * Prototype: [  listint_t *insert_node(listint_t **head, int number); ]
+  * Return: the address of the new node, or NULL if it failed
+  > gcc -Wall -Werror -Wextra -pedantic 13-main.c linked_lists.c 13-insert_number.c -o insert | ./insert
   
-## 101-compile   | 12. Compile |
-  Write a script that compiles a Python script file.
-  * The Python file name will be stored in the environment variable $PYFILE
-  * The output filename has to be $PYFILEc (ex: export PYFILE=my_main.py => output filename: my_main.pyc)
-  > export PYFILE=main.py | ./101-compile | ls | cat main.pyc | zgrep -c "Holberton School" | od -t x1 main.pyc # SYSTEM DEPENDANT => CAN BE DIFFERENT      
+## 100-print_tebahpla.py  | 14. Smile in the mirror |
+  Write a program that prints the ASCII alphabet, in reverse order, alternating lowercase and uppercase (z in lowercase and Y in uppercase) , not followed by a new line.
+  * You can only use one print function with string format
+  * You can only use one loop in your code
+  * You are not allowed to store characters in a variable
+  * You are not allowed to import any module
+  > ./100-print_tebahpla.py
+  
+## 101-remove_char_at.py   | 15. Remove at position |
+  Write a function that creates a copy of the string, removing the character at the position n (not the Python way, the “C array index”).
+  * Prototype: [ def remove_char_at(str, n): ]
+  * You are not allowed to import any module
+  * You don’t need to understand __import__
+  > ./101-main.py
+  
+## 102-magic_calculation.py   | 16. ByteCode -> Python #2 |
+  Write the Python function [ def magic_calculation(a, b, c): ] that does exactly the same as the following Python bytecode:
 
+```
+  3           0 LOAD_FAST                0 (a)
+              3 LOAD_FAST                1 (b)
+              6 COMPARE_OP               0 (<)
+              9 POP_JUMP_IF_FALSE       16
 
-## 102-magic_calculation.py  | 13. ByteCode -> Python #1 |
-  Write the Python function def magic_calculation(a, b): that does exactly the same as the following Python bytecode:
-  > export PYFILE=main.py | ./101-compile | ls | cat main.pyc | zgrep -c "Holberton School" | od -t x1 main.pyc # SYSTEM DEPENDANT => CAN BE DIFFERENT      
-```
-  3           0 LOAD_CONST               1 (98)
-              3 LOAD_FAST                0 (a)
-              6 LOAD_FAST                1 (b)
-              9 BINARY_POWER
-             10 BINARY_ADD
-             11 RETURN_VALUE
-```
-  * Tip Tip: Python bytecode  <"https://docs.python.org/3.4/library/dis.html">             
+  4          12 LOAD_FAST                2 (c)
+             15 RETURN_VALUE
+
+  5     >>   16 LOAD_FAST                2 (c)
+             19 LOAD_FAST                1 (b)
+             22 COMPARE_OP               4 (>)
+             25 POP_JUMP_IF_FALSE       36
+
+  6          28 LOAD_FAST                0 (a)
+             31 LOAD_FAST                1 (b)
+             34 BINARY_ADD
+             35 RETURN_VALUE
+
+  7     >>   36 LOAD_FAST                0 (a)
+             39 LOAD_FAST                1 (b)
+             42 BINARY_MULTIPLY
+             43 LOAD_FAST                2 (c)
+             46 BINARY_SUBTRACT
+             47 RETURN_VALUE
+```  
+  * tips - ByteCode "https://docs.python.org/3.4/library/dis.html" 

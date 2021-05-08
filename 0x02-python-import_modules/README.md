@@ -92,8 +92,8 @@
 ## 102-magic_calculation.py   | 8. ByteCode -> Python #3 |
   Write the Python function def magic_calculation(a, b): that does exactly the same as the following Python bytecode:
 
-.........................................................................................................................
 
+```
   3           0 LOAD_CONST               1 (0)
               3 LOAD_CONST               2 (('add', 'sub'))
               6 IMPORT_NAME              0 (magic_calculation_102)
@@ -133,18 +133,19 @@
 
   8     >>   90 LOAD_FAST                4 (c)
              93 RETURN_VALUE
-
- 10     >>   94 LOAD_FAST                3 (sub)
+   
+  10    >>   94 LOAD_FAST                3 (sub)
              97 LOAD_FAST                0 (a)
             100 LOAD_FAST                1 (b)
             103 CALL_FUNCTION            2 (2 positional, 0 keyword pair)
             106 RETURN_VALUE
             107 LOAD_CONST               0 (None)
             110 RETURN_VALUE
+```
   * Tip: Python bytecode
   > ./8-main.py
 
-...........................................................................................................................
+
 
 ## 103-fast_alphabet.py   | 9. Fast alphabet |
   Write a program that prints the alphabet in uppercase, followed by a new line.

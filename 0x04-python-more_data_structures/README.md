@@ -141,14 +141,15 @@
 ###  Python lists:
   * Prototype: [ void print_python_list(PyObject *p); ]
   * Format: see example
-###Python bytes:
+
+###  Python bytes:
   * Prototype: [ void print_python_bytes(PyObject *p); ]
   * Format: see example
   * Line “first X bytes”: print a maximum of 10 bytes
   * If p is not a valid PyBytesObject, print an error message (see example)
   * Read /usr/include/python3.4/bytesobject.h
 
-###About:
+###  About:
   * Python version: 3.4
   * Your shared library will be compiled with this command line: 
    > gcc -Wall -Werror -Wextra -pedantic -std=c99 -shared -Wl,-soname,libPython.so -o libPython.so -fPIC -I/usr/include/python3.4 103-python.c |

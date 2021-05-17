@@ -1,12 +1,16 @@
 #!/usr/bin/python3
+
+
 def safe_print_list(my_list=[], x=0):
-    try:
-        nb_print = 0
-        for item in my_list:
+    nb_print = 0
+    while True:
+        try:
             if nb_print < x:
-                print(item, end="")
+                print(my_list[nb_print], end='')
                 nb_print += 1
-        print()       
-        return nb_print
-    except Exception as ex:
-        print("Exceptions Caught:", ex)
+            else:
+                print()
+                return nb_print
+        except IndexError:
+            print()
+            return nb_print

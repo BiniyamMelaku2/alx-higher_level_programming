@@ -12,6 +12,11 @@ class MagicClass:
             raise TypeError('radius must be a number')
         self.__radius = radius
 
+    @property
+    def radius(self):
+        """getter decorarator property"""
+        return self.__radius
+
     def area(self):
         """Area dostring"""
         return self.__radius ** 2 * math.pi

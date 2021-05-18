@@ -1,4 +1,6 @@
-s is the "Square"  module.
+#!/usr/bin/python3
+"""
+This is the "Square"  class module
 """
 
 

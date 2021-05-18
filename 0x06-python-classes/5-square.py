@@ -35,7 +35,7 @@ class Square():
     def my_print(self):
         """prints a # square"""
 
-        num = self__size
+        num = self.__size
 
         if num is 0:
             print("")

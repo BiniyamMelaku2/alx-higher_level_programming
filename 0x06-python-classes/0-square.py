@@ -2,6 +2,6 @@
 """an empty class square"""
 
 
-class square():
-    """defines an empty class square"""
+class Square():
+    """empty class square"""
     pass

@@ -38,7 +38,7 @@ class Square:
         newstr = ""
         if self.__size > 0:
             for row in range(self.__position[1]):
-                newstr += "\n"  
+                newstr += "\n"
             for row in range(self.__size):
                 for col in range(self.__position[0]):
                     newstr += " "
@@ -55,7 +55,7 @@ class Square:
     def my_print(self):
         if self.__size > 0:
             for row in range(self.__position[1]):
-                print()  
+                print()
             for row in range(self.__size):
                 for col in range(self.__position[0]):
                     print(" ", end="")

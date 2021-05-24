@@ -47,9 +47,9 @@ if __name__ == "__main__":
             clear_a(x)
             if reject(x, y):
                 a[x][1] = y
-                if (x == n - 1):  
+                if (x == n - 1):
                     print(a)
                 else:
-                    nqueens(x + 1)  
+                    nqueens(x + 1)
 
     nqueens(0)

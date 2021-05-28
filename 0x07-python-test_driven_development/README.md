@@ -171,7 +171,7 @@ lib.print_python_string(s)
 * [Unicode HOWTO](https://docs.python.org/3/howto/unicode.html)
 
 
-##~~ NOtes ~~
+## Notes ...
 
 1. you should always write the documentation (module(s) + function(s)) and tests first, before you actually code anything
 2. Don’t trust the user, always think about all possible edge cases

@@ -149,36 +149,33 @@ lib.print_python_string(s)
 +
 
 ## READNG
-+ 
-[doctest — Test interactive Python examples](https://docs.python.org/3.4/library/doctest.html) 
-[doctest – Testing through documentation](https://alx-intranet.hbtn.io/rltoken/96kLRRIOHzsn3VDDXT21HA)
-[Unit Tests in Python](https://www.youtube.com/watch?v=1Lfv5tUGsn8) 
-[CPython](https://github.com/python/cpython)
-[Code review: string concatenation in C](https://blog.holbertonschool.com/code-review-string-concatenation-in-c/)
-[Hack The Virtual Memory: C strings & /proc](https://blog.holbertonschool.com/hack-the-virtual-memory-c-strings-proc/)
-[Hack The Virtual Memory: Python bytes](https://blog.holbertonschool.com/hack-the-virtual-memory-python-bytes/)
-[Hack the Virtual Memory: drawing the VM diagram](https://blog.holbertonschool.com/hack-the-virtual-memory-drawing-the-vm-diagram/)
-[Hack the Virtual Memory: malloc, the heap & the program break](https://blog.holbertonschool.com/hack-the-virtual-memory-malloc-the-heap-the-program-break/)
-[Embedding Python in Your C Programs](https://www.linuxjournal.com/article/8497)
-[Embedding Python in C/C++](https://learning-python.com/class/Workbook/unit16.htm)
-[Porting Extension Modules to 3.0](https://wiki.python.org/moin/PortingExtensionModulesToPy3k)
-[Python | C Strings of Doubtful Encoding | Set-1](https://www.geeksforgeeks.org/python-c-strings-of-doubtful-encoding-set-1/)
-[Python - Extension Programming with C](https://www.tutorialspoint.com/python/python_further_extensions.htm)
-[Python: get string representation of PyObject?](https://stackoverflow.com/questions/5356773/python-get-string-representation-of-pyobject)
-[The internals of Python string interning](http://guilload.com/python-string-interning/)
-[Documentation » Python/C API Reference Manual](https://docs.python.org/3/c-api/veryhigh.html)
-[Unicode Strings Passing to C Libraries](https://www.geeksforgeeks.org/unicode-strings-passing-to-c-libraries/)
-[Unicode HOWTO](https://docs.python.org/3/howto/unicode.html)
+
+* [doctest — Test interactive Python examples](https://docs.python.org/3.4/library/doctest.html) 
+* [doctest – Testing through documentation](https://alx-intranet.hbtn.io/rltoken/96kLRRIOHzsn3VDDXT21HA)
+* [Unit Tests in Python](https://www.youtube.com/watch?v=1Lfv5tUGsn8) 
+* [CPython](https://github.com/python/cpython)
+* [Code review: string concatenation in C](https://blog.holbertonschool.com/code-review-string-concatenation-in-c/)
+* [Hack The Virtual Memory: C strings & /proc](https://blog.holbertonschool.com/hack-the-virtual-memory-c-strings-proc/)
+* [Hack The Virtual Memory: Python bytes](https://blog.holbertonschool.com/hack-the-virtual-memory-python-bytes/)
+* [Hack the Virtual Memory: drawing the VM diagram](https://blog.holbertonschool.com/hack-the-virtual-memory-drawing-the-vm-diagram/)
+* [Hack the Virtual Memory: malloc, the heap & the program break](https://blog.holbertonschool.com/hack-the-virtual-memory-malloc-the-heap-the-program-break/)
+* [Embedding Python in Your C Programs](https://www.linuxjournal.com/article/8497)
+* [Embedding Python in C/C++](https://learning-python.com/class/Workbook/unit16.htm)
+* [Porting Extension Modules to 3.0](https://wiki.python.org/moin/PortingExtensionModulesToPy3k)
+* [Python | C Strings of Doubtful Encoding | Set-1](https://www.geeksforgeeks.org/python-c-strings-of-doubtful-encoding-set-1/)
+* [Python - Extension Programming with C](https://www.tutorialspoint.com/python/python_further_extensions.htm)
+* [Python: get string representation of PyObject?](https://stackoverflow.com/questions/5356773/python-get-string-representation-of-pyobject)
+* [The internals of Python string interning](http://guilload.com/python-string-interning/)
+* [Documentation » Python/C API Reference Manual](https://docs.python.org/3/c-api/veryhigh.html)
+* [Unicode Strings Passing to C Libraries](https://www.geeksforgeeks.org/unicode-strings-passing-to-c-libraries/)
+* [Unicode HOWTO](https://docs.python.org/3/howto/unicode.html)
 
 
 ##~~ NOtes ~~
-+
+
 1. you should always write the documentation (module(s) + function(s)) and tests first, before you actually code anything
 2. Don’t trust the user, always think about all possible edge cases
 > python -m doctest -v example.txt
-+
 > python3 -m doctest -v ./tests/0-add_integer.txt | tail -2
-+
 > python3 -c 'print(__import__("0-add_integer").__doc__)' | wc -l
-+
 > python3 -c 'print(__import__("0-add_integer").add_integer.__doc__)' | wc -l

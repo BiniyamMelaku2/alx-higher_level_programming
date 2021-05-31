@@ -26,7 +26,6 @@ Now use it:
 >>> print(my_list)
 [1, 4, 2, 3, 5]
 
-sorting strings will order chars based on ASCII values
 >>> my_list = MyList("python is cool")
 >>> my_list.print_sorted()
 [' ', ' ', 'c', 'h', 'i', 'l', 'n', 'o', 'o', 'o', 'p', 's', 't', 'y']

@@ -1,5 +1,7 @@
 #!/usr/bin/python3
-""" module that inherits list, then calls sorted method """
+"""
+module that inherits list then calls sorted method
+"""
 
 
 class MyList(list):

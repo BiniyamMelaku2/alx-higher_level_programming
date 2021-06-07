@@ -19,8 +19,29 @@
 * All your functions (inside and outside a class) should be documented: python3 -c 'print(__import__("my_module").my_function.__doc__)' and python3 -c 'print(__import__("my_module").MyClass.my_function.__doc__)'
 * A documentation is not a simple word, it’s a real sentence explaining what’s the purpose of the module, class or method (the length of it will be verified)
 
-## 0. If it's not tested it doesn't work  [  ]
-
 All your files, classes and methods must be unit tested and be PEP 8 validated.
 
 > python3 -m unittest discover tests 
+
+## 0. If it's not tested it doesn't work  [  ]
+
+
+## 9. Update #1  [ models/rectangle.py ]
+
+  Update the class Rectangle by updating the public method [ def update(self, *args): ] by changing the prototype to [ update(self, *args, **kwargs) ] that assigns a key/value argument to attributes:
+
+  * [**kwargs] can be thought of as a double pointer to a dictionary: key/value
+  + As Python doesn’t have pointers, **kwargs is not literally a double pointer – describing it as such is just a way of explaining its behavior in terms you’re already familiar with
+  * [**kwargs] must be skipped if [*args] exists and is not empty
+  * Each key in this dictionary represents an attribute to the instance
+  + This type of argument is called a “key-worded argument”. Argument order is not important
+
+## 10. And now, the Square!  []
+
+## 15. Dictionary to JSON string
+  JSON is one of the standard formats for sharing data representation.
+  Update the class Base by adding the static method [ def to_json_string(list_dictionaries): ] that returns the JSON string representation of list_dictionaries:
+  * list_dictionaries is a list of dictionaries
+  * If list_dictionaries is None or empty, return the string: "[]"
+  * Otherwise, return the JSON string representation of list_dictionaries
+

@@ -11,4 +11,4 @@ LEFT JOIN (
 ) AS genre_dex
 ON tv_genres.id=genre_dex.id
 WHERE genre_dex.id IS NULL
-ORDER BY tv_genres.name;
+ORDER BY tv_genres.name ASC;

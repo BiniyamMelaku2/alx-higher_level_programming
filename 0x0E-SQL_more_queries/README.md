@@ -266,3 +266,20 @@ Write a script that lists all shows contained in hbtn_0d_tvshows that have at le
 * You can use a maximum of two SELECT statement
 * The database name will be passed as an argument of the mysql command
 > cat 101-not_a_comedy.sql | mysql -hlocalhost -uroot -p hbtn_0d_tvshows
+
+
+## 19. Rotten tomatoes  [ 102-rating_shows.sql ]
+  Write a script that lists all shows from hbtn_0d_tvshows_rate by their rating.
+* Each record should display: tv_shows.title - rating sum
+* Results must be sorted in descending order by the rating
+* You can use only one SELECT statement
+* The database name will be passed as an argument of the mysql command
+> cat 102-rating_shows.sql | mysql -hlocalhost -uroot -p hbtn_0d_tvshows_rate
+
+## 20. Best genre [ 103-rating_genres.sql ]
+  Write a script that lists all genres in the database hbtn_0d_tvshows_rate by their rating.
+* Each record should display: tv_genres.name - rating sum
+* Results must be sorted in descending order by their rating
+* You can use only one SELECT statement
+* The database name will be passed as an argument of the mysql command
+> cat 103-rating_genres.sql | mysql -hlocalhost -uroot -p hbtn_0d_tvshows_rate

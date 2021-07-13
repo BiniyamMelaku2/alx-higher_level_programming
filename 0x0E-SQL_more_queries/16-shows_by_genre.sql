@@ -1,6 +1,6 @@
 -- lists all shows, and all genres linked to that show, from the database hbtn_0d_tvshows
-SELECT tv_shows.title, tv_genres.name 
-FROM tv_shows
-LEFT JOIN tv_show_genres ON tv_shows.id=tv_show_genres.show.id
-LEFT JOIN tv_genres ON tv_genres.id=tv_show_genres.genre_id
-ORDER BY tv_shows.title, tv_genres.name;
+SELECT ts.title, tg.name 
+FROM tv_shows AS ts
+LEFT OUTER JOIN tv_show_genres AS tsg ON tsg.show_id = ts.id
+LEFT OUTER JOIN tv_genres AS tg ON tg.id = tsg.genre_id
+ORDER BY ts.title, tg.name ASC;

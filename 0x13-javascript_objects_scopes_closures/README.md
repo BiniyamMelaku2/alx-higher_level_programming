@@ -13,7 +13,7 @@ Read or watch:
 * [Inheritance in JavaScript](https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Objects/Inheritance)
 * [Closures](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Closures)
 * [this/self](https://alistapart.com/article/getoutbindingsituations/)
-* [Modern JS]()](https://github.com/mbeaudru/modern-js-cheatsheet)
+* [Modern JS](https://github.com/mbeaudru/modern-js-cheatsheet)
 
 ## Tasks
 

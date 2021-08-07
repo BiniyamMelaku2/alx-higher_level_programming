@@ -23,6 +23,9 @@ if __name__ == "__main__":
     session = Session(engine)
 
     states = session.query(States).first()
-    print("{}: {}".format(states.id, states.name))
+    if states is None:
+        print("Nothing")
+    else:
+        print("{}: {}".format(states.id, states.name))
 
     session.close()

@@ -85,6 +85,7 @@ Prototype: [def find_peak(list_of_integers):]
 * 6-peak.txt must contain the complexity of your algorithm: O(log(n)), O(n), O(nlog(n)) or O(n2)
 Note: there may be more than one peak in the list
 > ./6-main.py
+
 > wc -l 6-peak.txt
 
 ## [7. Only status code](./100-status_code.sh)
@@ -94,6 +95,7 @@ Note: there may be more than one peak in the list
 * You are not allowed to use ; and &&
 * You have to use curl
 > ./100-status_code.sh 0.0.0.0:5000 ; echo ""
+
 > ./100-status_code.sh 0.0.0.0:5000/nop ; echo ""
 
 ## [8. cURL a JSON file](./101-post_json.sh)
@@ -102,7 +104,9 @@ Note: there may be more than one peak in the list
 * Your script must send a POST request with the contents of a file, passed with the filename as the second argument of the script, in the body of the request
 * You have to use curl
 > ./101-post_json.sh 0.0.0.0:5000/route_json my_json_0 ; echo ""
+
 > ./101-post_json.sh 0.0.0.0:5000/route_json my_json_1 ; echo ""
+
 > ./101-post_json.sh 0.0.0.0:5000/route_json my_json_2 ; echo ""
 
 ## [9. Catch me if you can!](./102-catch_me.sh)

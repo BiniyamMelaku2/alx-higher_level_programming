@@ -149,6 +149,6 @@ Print all commits by: `<sha>: <author name>` (one by line)
 * You don’t need to check arguments passed to the script (number or type)
 > ./100-github_commits.py rails rails
 
-Be careful: only 60 requests by hour by IP for unauthenticated requests [Rate limit]()
+Be careful: only 60 requests by hour by IP for unauthenticated requests [Rate limit](https://docs.github.com/en/rest)
 
 

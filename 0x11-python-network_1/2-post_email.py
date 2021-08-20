@@ -2,7 +2,7 @@
 """ takes in a URL and an email, sends a POST request  """
 import sys
 import urllib.request
-import urllib import parse
+from urllib import parse
 
 
 if __name__ == "__main__":

@@ -55,7 +55,7 @@ Read or watch:
 
 > ./3-error_code.py http://0.0.0.0:5000/status_500
 
-## [4. What's my status? #1](./ 4-hbtn_status.py)
+## [4. What's my status? #1](./4-hbtn_status.py)
   Write a Python script that fetches https://intranet.hbtn.io/status
 
 * You must use the package requests
